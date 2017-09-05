@@ -1,0 +1,51 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50,
+    "logging":"console.log"
+  },
+  "mysql": "mysql://root:@localhost:3306/backend",
+  "db":{
+  "host":"localhost",
+   "dialect": "mysql",
+   "port":3306,
+  "user":"root",
+ "post":"root",
+  "profile":"root",
+  " passReqToCallback":" true", // whether the request object should be passed to `verify` 
+    "session": "false", // whether to use sessions, 
+    "Verifier": "Verifier "
+  },
+"user":{
+  "name":"root",
+  "email":"root",
+  "password":""
+},
+"profile":{
+  "avatar":"root",
+  "description":"root",
+  "backgroud":"root"
+},
+"post":{
+  "message":"root",
+  "link":"root",
+  "url":"root",
+  "video":"root"
+},
+"settings":{
+    "name": "local", // the name to use when invoking the authentication Strategy
+    "entity": "user", // the entity that you're comparing username/password against
+    "service": "users", // the service to look up the entity
+    "usernameField": "email", // key name of username field on the request
+    "passwordField": "password", // key name of password field on the request
+    "entityUsernameField": "email", // key name of the username field on the entity (defaults to `usernameField`)
+    "entityPasswordField": "password", // key name of the password on the entity (defaults to `passwordField`)
+    "passReqToCallback": true, // whether the request object should be passed to `verify`
+    "session": false, // whether to use sessions,
+    "Verifier": "Verifier "// A Verifier class. Defaults to the built-in one but can be a custom one. See below for details.
+}
+}
+
